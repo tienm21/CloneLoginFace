@@ -1,0 +1,257 @@
+:root {
+  --primary-color: #1877f2;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f0f2f5;
+  height: 100vh;
+  display: flex;
+  
+}
+
+.container {
+  margin: auto;
+  width: 980px;
+  height: 496px;
+}
+
+.header__logo {
+  padding-left: 0;
+  position: relative;
+  left: -20px;
+}
+
+.header__logo-img {
+  height: 70px;
+}
+
+.body__login-curently-strong {
+  font-size: 1.9rem;
+}
+
+.body__login-curently-text {
+  line-height: 2rem;
+}
+
+/* body login */
+/* left */
+.body__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-strong {
+  font-size: 1.7rem;
+}
+
+.text-normal {
+  line-height: 1.8rem;
+  color: rgb(122, 131, 139);
+}
+
+.body__form-left--list {
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+}
+
+.body__form-left--icon {
+  width: 160px;
+  height: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 24px;
+  border: 1px solid #c7cacf;
+  position: relative;
+}
+
+.body__form-left--icon:hover {
+  box-shadow: -2px 2px 10px rgb(138, 136, 136);
+  transition: 0.3s;
+}
+
+.body__form-left--icon-img,
+.body__form-left--icon-img--avata {
+  height: 160px;
+  width: 160px;
+  border-radius: 10px 10px 0 0;
+}
+
+.add {
+  height: 160px;
+  background-color: #f5f6f7;
+  display: flex;
+}
+
+.icon-plus {
+  margin: auto;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+}
+.exit-icon {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+}
+
+.exit-icon:hover .exit-icon--notify {
+  display: block;
+}
+
+.exit-icon--notify {
+  position: absolute;
+  height: 22px;
+  width: 160px;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: black;
+  top: -34px;
+  left: -10px;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 4px;
+  display: none; 
+}
+
+.exit-icon--notify::before {
+  content: "";
+  border: 10px solid;
+  border-color: black transparent transparent transparent;
+  position: absolute;
+  bottom: -15px;  
+  /* left: -20px */
+}
+
+/* .icon-hide {
+  position: absolute;
+  font-size: 1.4rem;
+  display: none;
+  background-color: #fff;
+  border-radius: 50%;
+} */
+
+.body__form-left--icon-text {
+  width: 100%;
+  height: calc(100% - 160px);
+  /* height: 100%; */
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+}
+.text-add {
+  color: var(--primary-color);
+}
+
+/* right */
+.body__form-right {
+  width: 396px;
+  /* height: 349px; */
+  box-shadow: -2px 2px 10px rgb(224, 222, 222);
+  background-color: #ffffff;
+  border-radius: 7px;
+  position: relative;
+}
+
+.body__form-right--form {
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body__form-right--form-gruop {
+  width: 100%;  
+}
+
+.label-form-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 52px;
+  padding-left: 14px;
+  outline: none;
+  border: 1px solid rgb(173, 166, 166);
+  margin-bottom: 12px;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+.btn__login {
+  height: 48px;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  padding-top: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.body__form-right--form-forgot {
+  margin: 12px 0 20px;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  
+  position: relative;
+}
+
+.body__form-right--form-forgot:hover {
+  text-decoration: underline;
+}
+
+.body__form-right--form-forgot::after {
+  content: '';
+  width: 362px;
+  border-bottom: 1px solid rgb(219, 214, 214);
+  position: absolute;
+  bottom: -13px;
+  left: -125px;
+}
+
+.btn__create {
+  width: 178px;
+  height: 48px;
+  background-color: #42b72a;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 14px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.text-end {
+  position: absolute;
+  bottom: -50px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.text-link {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
