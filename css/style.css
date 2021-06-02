@@ -2,21 +2,20 @@
   --primary-color: #1877f2;
 }
 
+html body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 html {
   font-size: 62.5%;
-  
 }
 
 body {
   background-color: #f0f2f5;
   height: 100vh;
   display: flex;
+  
 }
-
-.text {
-  font-family: Arial, sans-serif;
-}
-
 
 .container {
   margin: auto;
